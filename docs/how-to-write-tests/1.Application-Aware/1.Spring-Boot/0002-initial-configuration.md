@@ -20,9 +20,9 @@ it is time to run your application for the first time from the test-context with
             TestSystem()
                 .with {
                     httpClient {
-                        HttpClientSystemOptions {
+                        HttpClientSystemOptions (
                             baseUrl = "http://localhost:8001"
-                        }
+                        )
                     }
                     springBoot(
                         runner = { parameters ->
@@ -56,9 +56,9 @@ it is time to run your application for the first time from the test-context with
              TestSystem()
                 .with {
                     httpClient {
-                        HttpClientSystemOptions {
+                        HttpClientSystemOptions (
                             baseUrl = "http://localhost:8001"
-                        }
+                        )
                     }
                     springBoot(
                         runner = { parameters ->
